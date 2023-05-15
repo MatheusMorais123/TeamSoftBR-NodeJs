@@ -1,0 +1,108 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "Team",
+    "dateExported": "2023-05-15T16:33:01.050Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "ad72f5df-e3b2-494b-9e32-11b59c892180",
+            "colId": "7a0717b3-58c8-4287-b825-7b36d2540eb2",
+            "containerId": "",
+            "name": "CriarCliente",
+            "url": "localhost:3333/client",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2023-05-12T18:56:24.516Z",
+            "modified": "2023-05-15T15:17:32.708Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"cnpj\": \"12345678900001\",\n  \"razaoSocial\": \"Empresa Teste\",\n  \"nomeContato\": \"João Silva\",\n  \"telefone\": \"11999999999\",\n  \"endereco\": {\n    \"logradouro\": \"Rua Desidério Jorge\",\n    \"numero\": \"46\",\n    \"complemento\": \"Rua\",\n    \"bairro\": \"Centro\",\n    \"cidade\": \"Mogi Das Cruzes\",\n    \"estado\": \"SP\",\n    \"cep\": \"01234567\"\n  }\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "b28df2cf-5cc0-43f1-9ebd-3949339a8877",
+            "colId": "7a0717b3-58c8-4287-b825-7b36d2540eb2",
+            "containerId": "",
+            "name": "AdicionarEndereco",
+            "url": "http://localhost:3333/client/64624d0c95b82a7bc9b8c41a/endereco",
+            "method": "POST",
+            "sortNum": 12500,
+            "created": "2023-05-15T15:26:44.101Z",
+            "modified": "2023-05-15T15:30:17.303Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\r\n    \"endereco\": {\r\n    \"logradouro\": \"Rua São Paulo\",\r\n    \"numero\": \"46\",\r\n    \"complemento\": \"Rua\",\r\n    \"bairro\": \"Centro\",\r\n    \"cidade\": \"Mogi Das Cruzes\",\r\n    \"estado\": \"SP\",\r\n    \"cep\": \"01234567\"\r\n    }\r\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "8adc6edb-d9f1-495f-90fd-39988d7aca7c",
+            "colId": "7a0717b3-58c8-4287-b825-7b36d2540eb2",
+            "containerId": "",
+            "name": "AtualizarCliente",
+            "url": "localhost:3333/client/64624d0c95b82a7bc9b8c41a",
+            "method": "PUT",
+            "sortNum": 15000,
+            "created": "2023-05-15T15:15:29.629Z",
+            "modified": "2023-05-15T15:18:00.565Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"cnpj\": \"12345678900001\",\n  \"razaoSocial\": \"Empresa Teste 2\",\n  \"nomeContato\": \"João Silva\",\n  \"telefone\": \"11999999999\",\n  \"endereco\": {\n    \"logradouro\": \"Rua Desidério Jorge\",\n    \"numero\": \"46\",\n    \"complemento\": \"Rua\",\n    \"bairro\": \"Centro\",\n    \"cidade\": \"Mogi Das Cruzes\",\n    \"estado\": \"SP\",\n    \"cep\": \"01234567\"\n  }\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "f6deb035-3739-41f1-8861-96535e3b5a1c",
+            "colId": "7a0717b3-58c8-4287-b825-7b36d2540eb2",
+            "containerId": "",
+            "name": "ListarClientes",
+            "url": "localhost:3333/client",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2023-05-12T19:59:07.609Z",
+            "modified": "2023-05-12T19:59:14.257Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "93dc929d-ea24-4061-935a-15d3c261640c",
+            "colId": "7a0717b3-58c8-4287-b825-7b36d2540eb2",
+            "containerId": "",
+            "name": "BuscaPorID",
+            "url": "localhost:3333/client/64624d0c95b82a7bc9b8c41a",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2023-05-12T20:05:14.808Z",
+            "modified": "2023-05-15T15:31:39.300Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "31021d03-bad6-433f-ac46-c4cea605678d",
+            "colId": "7a0717b3-58c8-4287-b825-7b36d2540eb2",
+            "containerId": "",
+            "name": "DeletarCliente",
+            "url": "localhost:3333/client/645e951c2133944312d5ba33",
+            "method": "DELETE",
+            "sortNum": 40000,
+            "created": "2023-05-12T20:22:01.913Z",
+            "modified": "2023-05-12T20:30:43.765Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        }
+    ]
+}
